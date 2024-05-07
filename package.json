@@ -1,0 +1,28 @@
+{
+  "name": "nerdery-graphql-test",
+  "version": "1.0.0",
+  "description": "Take home test for GraphQL candidates",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.10.4",
+    "graphql": "^16.8.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.12.9",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "tsx": "^4.9.3",
+    "typescript": "^5.4.5"
+  },
+  "keywords": [],
+  "jest": {
+    "preset": "ts-jest"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "strict": false
+  },
+  "files": [
+    "src/types.ts"
+    // Add this line to include the types globally
+  ],
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}
