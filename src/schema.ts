@@ -16,6 +16,6 @@ export const typeDefs = `#graphql
 
   type Query {
     getUsers: [User!]!
-    getUserById(id: ID!, source: DataSource!): User
+    getUserById(id: ID!): User
   }
 `;

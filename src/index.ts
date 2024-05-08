@@ -6,7 +6,7 @@ import {getUserById, getUsers} from "./resolver"
 const resolvers = {
     Query: {
         getUsers: () => getUsers(),
-        getUserById: (parent, { id, source }) => getUserById(id, source)
+        getUserById: (parent, { id }) => getUserById(id)
     },
 };
 
