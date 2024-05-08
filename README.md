@@ -17,20 +17,17 @@ You will be provided with user data from two different sources (`userData1` and 
 ## Guidelines
 
 - Use TypeScript for your implementation.
+- Be sure to run `npm install` to install your dependencies.
+- Run `npm start` to start the server and access the GraphQL playground for testing.
 - Feel free to modify the provided files (`resolver.ts`) as needed.
 - You are allowed to create additional helper functions or files if necessary.
 - Ensure that your solution is clean, readable, and follows best practices.
-- Test your solution locally before submitting by running `npm start` and going to the GraphQL playground.
-
-### Extra Credit (Optional)
-
-- **Resolver Tests**: Write test cases for the resolver functions using a testing framework like Jest. Test-driven 
-  development (TDD) is encouraged to demonstrate your understanding of unit testing. You can test this by running: 
-  `npm test`
+- Some parts of this test are ambiguous. It's okay to make decisions, and we can discuss them later in the interview.
+- Your code must pass the tests when you run `npm test`. By default, these tests will be failing.
 
 ## Submission
 
-Once you have completed the tasks, please zip the entire project directory and email it to [solomon.antoine@nerdery.com](mailto:solomon.antoine@nerdery.com) within the allotted time. Include your name and "GraphQL Take-Home Test" in the email subject.
+Once you have completed the tasks, please invite Mark Jones (`mjones-nerdery`) & Solomon Antoine (`solo-nerdery`) to the forked version of your repository.
 
 If you have any questions or encounter any issues during the test, feel free to reach out to us for assistance.
 
