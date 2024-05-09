@@ -5,6 +5,10 @@ import { typeDefs } from "./schema";
 import {getUserById, getUsers} from "./resolver"
 
 const resolvers = {
+    DataSource: {
+        DATA_SOURCE_1: 0,
+        DATA_SOURCE_2: 1,
+    },
     Query: {
         getUsers: () => getUsers(),
         getUserById: (parent, { id }) => {
