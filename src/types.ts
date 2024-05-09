@@ -9,6 +9,6 @@ export interface User {
 }
 
 export enum DataSource {
-    DATA_SOURCE_1,
-    DATA_SOURCE_2
+    DATA_SOURCE_1 = "DATA_SOURCE_1",
+    DATA_SOURCE_2 = "DATA_SOURCE_2",
 }
