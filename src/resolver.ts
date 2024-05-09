@@ -21,11 +21,11 @@ export function getUserById(id: string | number): User | null {
 
 function normalizeUser(user: any): User {
     return {
-        id: user.id || user.uuid,
-        firstName: user.first || user.first_name,
-        lastName: user.last || user.last_name,
-        emailAddress: user.email || user.email_address,
-        phoneNumber: user.phone || user.phone_number,
+        id: user.id,
+        firstName: user.first || user.first_name || '',
+        lastName: user.last || user.last_name || '',
+        emailAddress: user.email || user.email_address || '',
+        phoneNumber: user.phone || user.phone_number || '',
         source: typeof user.id === 'string' ? DataSource.DATA_SOURCE_1 : DataSource.DATA_SOURCE_2
     };
 }
