@@ -23,16 +23,16 @@ describe('Resolver Tests', () => {
             const uuid = 'c3d504e3-4f82-4e28-8db9-b3157647c8c1';
             const user = getUserById(uuid);
             expect(user).not.toBeNull();
-            expect(user.id).toEqual(uuid);
-            expect(user.source).toEqual(DataSource.DATA_SOURCE_1);
+            expect(user?.id).toEqual(uuid);
+            expect(user?.source).toEqual(DataSource.DATA_SOURCE_1);
         });
 
         it('should return a user by numeric ID from DataSource.DATA_SOURCE_2', () => {
             const numericId = 1;
             const user = getUserById(numericId);
             expect(user).not.toBeNull();
-            expect(user.id).toEqual(numericId);
-            expect(user.source).toEqual(DataSource.DATA_SOURCE_2);
+            expect(user?.id).toEqual(numericId);
+            expect(user?.source).toEqual(DataSource.DATA_SOURCE_2);
         });
 
         // Test to verify that the correct data source is used based on the ID type
@@ -42,10 +42,10 @@ describe('Resolver Tests', () => {
             const userFromUuid = getUserById(uuid);
             const userFromNumericId = getUserById(numericId);
 
-            expect(userFromUuid.source).toEqual(DataSource.DATA_SOURCE_1);
-            expect(typeof userFromUuid.id).toBe('string');
-            expect(userFromNumericId.source).toEqual(DataSource.DATA_SOURCE_2);
-            expect(typeof userFromNumericId.id).toBe('number');
+            expect(userFromUuid?.source).toEqual(DataSource.DATA_SOURCE_1);
+            expect(typeof userFromUuid?.id).toBe('string');
+            expect(userFromNumericId?.source).toEqual(DataSource.DATA_SOURCE_2);
+            expect(typeof userFromNumericId?.id).toBe('number');
         });
     });
 });
